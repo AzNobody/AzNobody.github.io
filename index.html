@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Nom - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Josefin Sans', 'Times New Roman', sans-serif;
+            background-color: #f8f9fa; /* un peu de gris */
+            color: #343a40; /* noir */
+        }
+        .navbar {
+            background-color: #343a40; /* noir */
+            color: #ffffff; /* blanc */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-categories {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-categories li {
+            margin-right: 20px;
+        }
+        .navbar-categories li:last-child {
+            margin-right: 0;
+        }
+        .navbar-social-icons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-social-icons li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Votre Nom et Prénom</div>
+        <ul class="navbar-categories">
+            <li><a href="#">CV</a></li>
+            <li>
+                <a href="#">Projets</a>
+                <ul>
+                    <li><a href="#">Projet 1</a></li>
+                    <li><a href="#">Projet 2</a></li>
+                    <!-- Ajoutez d'autres projets ici -->
+                </ul>
+            </li>
+            <li><a href="#">À propos de moi</a></li>
+        </ul>
+        <ul class="navbar-social-icons">
+            <li><a href="#"><img src="github-icon.png" alt="GitHub"></a></li>
+            <li><a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
+            <!-- Ajoutez d'autres icônes de réseaux sociaux ici -->
+        </ul>
+    </nav>
+    <!-- Ajoutez le contenu de votre portfolio ici -->
+</body>
+</html>
