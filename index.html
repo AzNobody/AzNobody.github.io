@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votre Nom - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: 'Josefin Sans', 'Times New Roman', sans-serif;
             background-color: #f8f9fa; /* un peu de gris */
             color: #343a40; /* noir */
+            margin: 0;
+            padding: 0;
         }
         .navbar {
             background-color: #343a40; /* noir */
@@ -36,6 +39,13 @@
         .navbar-categories li:last-child {
             margin-right: 0;
         }
+        .navbar-categories li a {
+            color: #ffffff; /* blanc */
+            text-decoration: none;
+        }
+        .navbar-categories li a:hover {
+            color: #f8f9fa; /* gris clair */
+        }
         .navbar-social-icons {
             list-style: none;
             margin: 0;
@@ -44,6 +54,14 @@
         .navbar-social-icons li {
             display: inline-block;
             margin-left: 10px;
+        }
+        .navbar-social-icons li a {
+            color: #ffffff; /* blanc */
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .navbar-social-icons li a:hover {
+            color: #f8f9fa; /* gris clair */
         }
     </style>
 </head>
@@ -63,8 +81,8 @@
             <li><a href="#">À propos de moi</a></li>
         </ul>
         <ul class="navbar-social-icons">
-            <li><a href="#"><img src="github-icon.png" alt="GitHub"></a></li>
-            <li><a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             <!-- Ajoutez d'autres icônes de réseaux sociaux ici -->
         </ul>
     </nav>
