@@ -6,6 +6,7 @@
     <title>Votre Nom - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             font-family: 'Josefin Sans', 'Times New Roman', sans-serif;
@@ -18,9 +19,6 @@
             background-color: #343a40; /* noir */
             color: #ffffff; /* blanc */
             padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
         .navbar-brand {
             font-size: 1.5rem;
@@ -35,6 +33,8 @@
         }
         .navbar-categories li {
             margin-right: 20px;
+            display: flex;
+            align-items: center;
         }
         .navbar-categories li:last-child {
             margin-right: 0;
@@ -46,13 +46,28 @@
         .navbar-categories li a:hover {
             color: #f8f9fa; /* gris clair */
         }
+        .dropdown-menu {
+            display: none;
+            background-color: #343a40; /* noir */
+        }
+        .navbar-categories li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-item {
+            color: #ffffff; /* blanc */
+        }
+        .dropdown-item:hover {
+            background-color: #f8f9fa; /* gris clair */
+            color: #343a40; /* noir */
+        }
         .navbar-social-icons {
             list-style: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            align-items: center;
         }
         .navbar-social-icons li {
-            display: inline-block;
             margin-left: 10px;
         }
         .navbar-social-icons li a {
@@ -67,16 +82,18 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar-brand">Votre Nom et Prénom</div>
+        <div class="navbar-brand">Portfolio</div>
         <ul class="navbar-categories">
             <li><a href="#">CV</a></li>
-            <li>
-                <a href="#">Projets</a>
-                <ul>
-                    <li><a href="#">Projet 1</a></li>
-                    <li><a href="#">Projet 2</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projets
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Projet 1</a>
+                    <a class="dropdown-item" href="#">Projet 2</a>
                     <!-- Ajoutez d'autres projets ici -->
-                </ul>
+                </div>
             </li>
             <li><a href="#">À propos de moi</a></li>
         </ul>
@@ -87,5 +104,8 @@
         </ul>
     </nav>
     <!-- Ajoutez le contenu de votre portfolio ici -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
