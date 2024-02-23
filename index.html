@@ -1,111 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votre Nom - Portfolio</title>
+    <title>Arthur FOUTREL - Portfolio</title>
+    <link rel="icon" href="img/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Josefin Sans', 'Times New Roman', sans-serif;
-            background-color: #f8f9fa; /* un peu de gris */
-            color: #343a40; /* noir */
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            background-color: #343a40; /* noir */
-            color: #ffffff; /* blanc */
-            padding: 10px 20px;
-        }
-        .navbar-brand {
-            font-size: 1.5rem;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar-categories {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar-categories li {
-            margin-right: 20px;
-            display: flex;
-            align-items: center;
-        }
-        .navbar-categories li:last-child {
-            margin-right: 0;
-        }
-        .navbar-categories li a {
-            color: #ffffff; /* blanc */
-            text-decoration: none;
-        }
-        .navbar-categories li a:hover {
-            color: #f8f9fa; /* gris clair */
-        }
-        .dropdown-menu {
-            display: none;
-            background-color: #343a40; /* noir */
-        }
-        .navbar-categories li:hover .dropdown-menu {
-            display: block;
-        }
-        .dropdown-item {
-            color: #ffffff; /* blanc */
-        }
-        .dropdown-item:hover {
-            background-color: #f8f9fa; /* gris clair */
-            color: #343a40; /* noir */
-        }
-        .navbar-social-icons {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-        }
-        .navbar-social-icons li {
-            margin-left: 10px;
-        }
-        .navbar-social-icons li a {
-            color: #ffffff; /* blanc */
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-        .navbar-social-icons li a:hover {
-            color: #f8f9fa; /* gris clair */
-        }
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="navbar-brand">Portfolio</div>
-        <ul class="navbar-categories">
-            <li><a href="#">CV</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projets
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Projet 1</a>
-                    <a class="dropdown-item" href="#">Projet 2</a>
-                    <!-- Ajoutez d'autres projets ici -->
+    <header class="fixed-top">
+        <nav class="navbar d-flex align-items-center justify-content-between">
+            <div class="navbar-brand">Portfolio</div>
+            <ul class="navbar-categories">
+                <li class="active"><a href="#">CV</a></li>
+                <li><a href="#">À propos</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Projets
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Projet 1</a>
+                        <a class="dropdown-item" href="#">Projet 2</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-social-icons">
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="title">Bonjour, je suis Arthur FOUTREL</div>
+            <span class="typed" data-typed-items="Étudiant, Développeur, Curieux, Passionné"></span>
+        </section>
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <h1>Bonjour, je suis Arthur FOUTREL</h1>
+                            <p>Je suis un jeune développeur passionné par la création de sites web et d'applications.</p>
+                            <a href="#" class="btn btn-primary">Télécharger mon CV</a>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li><a href="#">À propos de moi</a></li>
-        </ul>
-        <ul class="navbar-social-icons">
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <!-- Ajoutez d'autres icônes de réseaux sociaux ici -->
-        </ul>
-    </nav>
-    <!-- Ajoutez le contenu de votre portfolio ici -->
+            </div>
+        </section>
+        <div class="test-container"></div>
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-image">
+                            <img src="https://via.placeholder.com/500" alt="Arthur FOUTREL">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <h2>À propos de moi</h2>
+                            <p>Je suis un développeur web junior passionné par la création de sites web et d'applications
+                                web. J'ai commencé à apprendre le développement web il y a 1 an et j'ai développé de
+                                nombreuses compétences depuis. J'ai une passion pour le développement web et j'aime
+                                apprendre de nouvelles technologies pour améliorer mes compétences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container text-center">
+            <p>&copy; Designé par Arthur FOUTREL</p>
+        </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

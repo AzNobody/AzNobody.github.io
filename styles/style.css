@@ -1,0 +1,126 @@
+body {
+    font-family: 'Josefin Sans', 'Times New Roman', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar {
+    padding: 10px 0;
+    margin: 0 300px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-categories {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-categories li {
+    position: relative;
+    text-transform: uppercase;
+    margin-right: 30px;
+    padding: 15px 0;
+}
+
+.navbar-categories li a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-categories li a::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    /* blanc */
+    transition: width 0.7s ease;
+}
+
+.navbar-categories li.active a::before {
+    width: 100%;
+}
+
+.navbar-categories li a:hover::before {
+    width: 100%;
+}
+
+.navbar-categories li.dropdown .dropdown-menu a::before {
+    display: none;
+}
+
+.navbar-categories li:hover .dropdown-menu {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.navbar-categories li a.dropdown-item {
+    background-color: #ffffff;
+    color: #4e4e4e;
+    padding: 10px 20px;
+}
+
+.navbar-categories li a.dropdown-item:hover {
+    background-color: #ffffff;
+    color: #00c811;
+}
+
+.navbar-social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-social-icons li {
+    margin-left: 10px;
+}
+
+.navbar-social-icons li a {
+    color: #ffffff;
+    /* blanc */
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.home {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('/img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 50vh;
+    font-size: 32px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight:600;
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+}
