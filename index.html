@@ -14,77 +14,81 @@
 
 <body>
     <header class="fixed-top">
-        <nav class="navbar d-flex align-items-center justify-content-between">
-            <div class="navbar-brand">Portfolio</div>
-            <ul class="navbar-categories">
-                <li class="active"><a href="#">CV</a></li>
-                <li><a href="#">À propos</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Projets
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Projet 1</a>
-                        <a class="dropdown-item" href="#">Projet 2</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="navbar-social-icons">
-                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-categories navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#cv">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projets</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
     </header>
+
     <main>
         <section class="home">
             <div class="title">Bonjour, je suis Arthur FOUTREL</div>
             <span class="typed" data-typed-items="Étudiant, Développeur, Curieux, Passionné"></span>
         </section>
-        <section class="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="hero-content">
-                            <h1>Bonjour, je suis Arthur FOUTREL</h1>
-                            <p>Je suis un jeune développeur passionné par la création de sites web et d'applications.</p>
-                            <a href="#" class="btn btn-primary">Télécharger mon CV</a>
-                        </div>
-                    </div>
+
+        <div id="cv" class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="title-section">CV</h3>
+                    <div class="line"></div>
                 </div>
             </div>
-        </section>
-        <div class="test-container"></div>
-        <section class="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="about-image">
-                            <img src="https://via.placeholder.com/500" alt="Arthur FOUTREL">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <h2>À propos de moi</h2>
-                            <p>Je suis un développeur web junior passionné par la création de sites web et d'applications
-                                web. J'ai commencé à apprendre le développement web il y a 1 an et j'ai développé de
-                                nombreuses compétences depuis. J'ai une passion pour le développement web et j'aime
-                                apprendre de nouvelles technologies pour améliorer mes compétences.</p>
-                        </div>
-                    </div>
+            <div class="row mt-4">
+                <div class="col-sm-12 text-center">
+                    <a href="CV/index.html">
+                        <i class="fas fa-file-alt fa-5x cv-icon"></i>
+                    </a>
+                    <br>
+                    <a href="chemin_vers_votre_cv.pdf" class="btn btn-primary">Télécharger mon CV</a>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div id="projects" class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="title-section">Projets</h3>
+                    <p class="subtitle">Voici quelques projets que j'ai pu réaliser dans le cadre de mes études ou lors
+                        de projets personnels</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer>
         <div class="container text-center">
             <p>&copy; Designé par Arthur FOUTREL</p>
         </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-    <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>
