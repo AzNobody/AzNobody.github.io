@@ -15,7 +15,7 @@
 <body>
   <header class="fixed-top">
     <nav class="navbar navbar-expand-md">
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="">Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -23,10 +23,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-categories navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#cv">CV</a>
+            <a class="nav-link" href="#cv">CV</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">À propos</a>
+            <a class="nav-link" href="#about-me">À propos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projets</a>
@@ -34,10 +34,10 @@
         </ul>
         <ul class="navbar-nav icons">
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+            <a class="nav-link" href="https://github.com/AzNobody"><i class="fab fa-github"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+            <a class="nav-link" href="https://linkedin.com/in/arthur-foutrel/"><i class="fab fa-linkedin"></i></a>
           </li>
         </ul>
       </div>
@@ -68,6 +68,15 @@
       </div>
     </div>
 
+    <div id="about-me" class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="title-section">A propos de moi</h3>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
     <div id="projects" class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -77,17 +86,18 @@
           <div class="line"></div>
         </div>
       </div>
+
       <div class="row">
 
         <div class="col-md-4">
           <div class="work-box">
             <div class="work-img">
-              <img src="img/logo.png" alt="" class="img-showcase">
+              <img src="img/Arsenal/logo.png" data-toggle="modal" data-target="#projectModal1">
             </div>
             <div class="work-content">
-              <h2 class="w-title">Projet 1</h2>
+              <h2 class="w-title">Arsenal</h2>
               <div class="w-subtitle">
-                <span class="w-info">Application Web</span> / <span class="w-date">XX Xxx. 20xx</span>
+                <span class="w-info">Application Web - Vue.js</span> / <span class="w-date">Décembre 2023</span>
               </div>
             </div>
           </div>
@@ -96,13 +106,12 @@
         <div class="col-md-4">
           <div class="work-box">
             <div class="work-img">
-              <img src="img/logo.png" alt="" class="img-showcase">
-              <a href="#" class="w-more">Voir plus</a>
+              <img src="img/Bomberman/logo.png" data-toggle="modal" data-target="#projectModal2">
             </div>
             <div class="work-content">
-              <h2 class="w-title">Projet 2</h2>
+              <h2 class="w-title">Bomberman</h2>
               <div class="w-subtitle">
-                <span class="w-info">Application Web</span> / <span class="w-date">XX Xxx. 20xx</span>
+                <span class="w-info">Jeu vidéo - Unreal Engine</span> / <span class="w-date">Septembre 2023</span>
               </div>
             </div>
           </div>
@@ -111,7 +120,7 @@
         <div class="col-md-4">
           <div class="work-box">
             <div class="work-img">
-              <img src="img/logo.png" alt="" class="img-showcase">
+              <img src="img/Arsenal/logo.png" data-toggle="modal" data-target="#projectModal1">
             </div>
             <div class="work-content">
               <h2 class="w-title">Projet 3</h2>
@@ -122,6 +131,119 @@
           </div>
         </div>
 
+      </div>
+    </div>
+
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModal1Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h5 class="modal-title w-100" id="projectModal1Label">Arsenal</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Project description -->
+            <div class="project-description">
+              <p>Arsenal est la première application web que j'ai réalisée avec Vue.js, cette expérience m'a permis de
+                me familiariser avec ce framework. C'est un travail de groupe achevé en une dizaine de jours. Cette
+                plateforme de distribution fictive de contenu digital est axée sur les jeux vidéo, inspirée par des
+                plateformes renommées telles que "Steam". Arsenal vise à offrir une expérience utilisateur intuitive et
+                complète pour découvrir, acheter et gérer des jeux vidéo.
+              </p>
+            </div>
+            <div id="carouselProjectIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselProjectIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselProjectIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselProjectIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselProjectIndicators" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/Arsenal/home.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/Arsenal/magasin.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/Arsenal/jeu.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/Arsenal/panier.png" alt="Fourth slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselProjectIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselProjectIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+              </a>
+            </div>
+            <div class="to-github-project">
+              <a href="https://github.com/AzNobody/Arsenal" target="_blank" class="btn">Accéder au projet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Project 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModal2Label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h5 class="modal-title w-100" id="projectModal2Label">Bomberman</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Project description -->
+            <div class="project-description">
+              <p>A compléter...</p>
+            </div>
+            <div id="carouselProject2Indicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselProject2Indicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselProject2Indicators" data-slide-to="1"></li>
+                <li data-target="#carouselProject2Indicators" data-slide-to="2"></li>
+                <li data-target="#carouselProject2Indicators" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/Bomberman/menu.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/Bomberman/controles.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/Bomberman/partie.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/Bomberman/partie-en-cours.png" alt="Fourth slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselProject2Indicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselProject2Indicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+              </a>
+            </div>
+            <div class="to-github-project">
+              <a href="https://github.com/AzNobody/Bomberman" target="_blank" class="btn">Accéder au projet</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
