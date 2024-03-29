@@ -178,7 +178,7 @@ body {
 }
 
 .aboutme {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .aboutme:last-child {
@@ -210,19 +210,19 @@ p {
 }
 
 .aboutme .box .year_company h5 {
-  color: #7f898f;
+  color: #555b5f;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .aboutme .box .year_company h4 {
-  color: #7f898f;
+  color: #555b5f;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .aboutme .box .year_company h4 a {
-  color: #7f898f;
+  color: #555b5f;
   font-weight: 600;
   font-size: 0.8em;
   text-decoration: none;
@@ -231,11 +231,12 @@ p {
 .aboutme .box .content {
   position: relative;
   padding-left: 20px;
+  font-size: 14px;
 }
 
 .aboutme .box .content h4 {
   color: #00547b;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 3px;
 }
@@ -250,7 +251,7 @@ p {
 }
 
 .skills .box h4 {
-  color: #666d71;
+  color: #555b5f;
   font-weight: 500;
   font-size: 0.9em;
   text-transform: uppercase;
