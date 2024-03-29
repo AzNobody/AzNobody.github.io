@@ -82,6 +82,11 @@ body {
   font-weight: 300;
 }
 
+.header h2 .ecole {
+  font-size: 0.6em;
+  font-weight: 200;
+}
+
 .contact {
   position: relative;
   padding-top: 30px;
